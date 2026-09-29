@@ -1,0 +1,15 @@
+counterparty_id,name,kind,country,rating,group,ticker,exchange
+C01,Royal Bank of Canada,bank,CA,AA,RBC,RY,TSX
+C02,Toronto-Dominion Bank,bank,CA,AA,TD,TD,TSX
+C03,Bank of Nova Scotia,bank,CA,AA,BNS,BNS,TSX
+C04,Manulife Financial,insurer,CA,A,MFC,MFC,TSX
+C05,Sun Life Financial,insurer,CA,A,SLF,SLF,TSX
+C06,JPMorgan Chase,bank,US,AA,JPM,JPM,NYSE
+C07,Goldman Sachs,bank,US,A,GS,GS,NYSE
+C08,BlackRock,asset_manager,US,AA,BLK,BLK,NYSE
+C09,Maple Ridge Pension Plan,pension,CA,AAA,MAPLE_RIDGE,,
+C10,Harbourfront Asset Management,asset_manager,CA,BBB,HARBOURFRONT,,
+C11,Northshore Capital LP,hedge_fund,CA,BB,NORTHSHORE,,
+C12,Cedar Point Partners,hedge_fund,US,BB,CEDAR_POINT,,
+C13,Granite Peak Advisors,asset_manager,US,BBB,GRANITE_PEAK,,
+C14,Lakeview Mutual Insurance,insurer,CA,A,LAKEVIEW,,

@@ -1,0 +1,30 @@
+security_id,asset_type,description,currency,country,issuer_group,ticker,coupon,maturity,benchmark,spread_bp
+RY,equity,Royal Bank of Canada,CAD,CA,RBC,RY.TO,,,,
+TD,equity,Toronto-Dominion Bank,CAD,CA,TD,TD.TO,,,,
+BNS,equity,Bank of Nova Scotia,CAD,CA,BNS,BNS.TO,,,,
+MFC,equity,Manulife Financial,CAD,CA,MFC,MFC.TO,,,,
+SHOP,equity,Shopify,CAD,CA,SHOPIFY,SHOP.TO,,,,
+CNR,equity,Canadian National Railway,CAD,CA,CN,CNR.TO,,,,
+ENB,equity,Enbridge,CAD,CA,ENBRIDGE,ENB.TO,,,,
+CNQ,equity,Canadian Natural Resources,CAD,CA,CNRL,CNQ.TO,,,,
+SU,equity,Suncor Energy,CAD,CA,SUNCOR,SU.TO,,,,
+BN,equity,Brookfield Corporation,CAD,CA,BROOKFIELD,BN.TO,,,,
+CSU,equity,Constellation Software,CAD,CA,CONSTELLATION,CSU.TO,,,,
+ATD,equity,Alimentation Couche-Tard,CAD,CA,COUCHE_TARD,ATD.TO,,,,
+AAPL,equity,Apple,USD,US,APPLE,AAPL,,,,
+MSFT,equity,Microsoft,USD,US,MICROSOFT,MSFT,,,,
+NVDA,equity,NVIDIA,USD,US,NVIDIA,NVDA,,,,
+AMZN,equity,Amazon,USD,US,AMAZON,AMZN,,,,
+GOOGL,equity,Alphabet,USD,US,ALPHABET,GOOGL,,,,
+META,equity,Meta Platforms,USD,US,META,META,,,,
+JPM,equity,JPMorgan Chase,USD,US,JPM,JPM,,,,
+GS,equity,Goldman Sachs,USD,US,GS,GS,,,,
+XOM,equity,Exxon Mobil,USD,US,EXXON,XOM,,,,
+JNJ,equity,Johnson & Johnson,USD,US,JNJ,JNJ,,,,
+GOC-2Y,bond,Canada 3.25% 2028-09-01 (illustrative),CAD,CA,GOC,,3.25,2028-09-01,valet:BD.CDN.2YR.DQ.YLD,0
+GOC-5Y,bond,Canada 3.50% 2031-09-01 (illustrative),CAD,CA,GOC,,3.50,2031-09-01,valet:BD.CDN.5YR.DQ.YLD,0
+GOC-10Y,bond,Canada 3.75% 2036-06-01 (illustrative),CAD,CA,GOC,,3.75,2036-06-01,valet:BD.CDN.10YR.DQ.YLD,0
+RY-5Y,bond,Royal Bank of Canada 4.40% senior note 2031-06-15 (illustrative),CAD,CA,RBC,,4.40,2031-06-15,valet:BD.CDN.5YR.DQ.YLD,90
+UST-2Y,bond,US Treasury 4.25% 2028-09-30 (illustrative),USD,US,UST,,4.25,2028-09-30,fred:DGS2,0
+UST-5Y,bond,US Treasury 4.50% 2031-09-30 (illustrative),USD,US,UST,,4.50,2031-09-30,fred:DGS5,0
+UST-10Y,bond,US Treasury 4.875% 2036-08-15 (illustrative),USD,US,UST,,4.875,2036-08-15,fred:DGS10,0

@@ -1,0 +1,82 @@
+========================================================================================================
+DVP COUNTERPARTY SETTLEMENT RISK - DAILY REPORT
+Business date: 2026-09-28   Run: 2026-09-29 15:56 UTC   Currency: CAD
+========================================================================================================
+Open trades: 43 (37 pending, 6 failed) across 13 counterparties
+Settlement value 139,161,705 vs. exposure (PFE) 3,488,154: 2.51% of it is at risk (DVP removes principal risk)
+Limit excesses: 1   Amber (>= 80%): 1   Fails: 6   Watchlist names: 2
+
+LIMIT UTILIZATION BY COUNTERPARTY
+--------------------------------------------------------------------------------------------------------
+Counterparty                   Rtg  Type           Trd Fail  Settle value   Curr exp        PFE      Limit     Util  Status
+Northshore Capital LP          BB   hedge fund       7    0     7,757,112      4,056    171,727    150,000   114.5%  EXCESS [WATCH]
+Harbourfront Asset Management  BBB  asset manager    5    1    56,817,310     88,304    704,003    800,000    88.0%  AMBER [WATCH]
+Cedar Point Partners           BB   hedge fund       2    0     3,098,570          0     84,801    150,000    56.5%  OK
+Royal Bank of Canada           AA   bank             3    0     2,824,440      1,040  1,410,203  4,000,000    35.3%  OK [WWR]
+Granite Peak Advisors          BBB  asset manager    4    1    11,176,537     28,531    176,646    800,000    22.1%  OK
+Lakeview Mutual Insurance      A    insurer          5    2     8,049,335     10,352    392,597  2,000,000    19.6%  OK
+Goldman Sachs                  A    bank             5    1     9,955,329     37,971    198,912  2,500,000     8.0%  OK
+Manulife Financial             A    insurer          3    0    11,026,439     15,776    106,300  2,000,000     5.3%  OK
+Toronto-Dominion Bank          AA   bank             3    0    16,737,615     12,439    134,360  4,000,000     3.4%  OK
+Maple Ridge Pension Plan       AAA  pension          3    0     9,525,621        920     69,794  5,000,000     1.4%  OK
+BlackRock                      AA   asset manager    1    1       259,399          0     21,430  2,500,000     0.9%  OK
+Sun Life Financial             A    insurer          1    0       941,612          0     13,796  2,000,000     0.7%  OK
+Bank of Nova Scotia            AA   bank             1    0       992,386          0      3,583  4,000,000     0.1%  OK
+--------------------------------------------------------------------------------------------------------
+TOTAL                                                    139,161,705    199,389  3,488,154
+
+LIMIT EXCESSES AND EARLY WARNINGS
+--------------------------------------------------------------------------------------------------------
+  EXCESS Northshore Capital LP: PFE 171,727 vs limit 150,000 (BB hedge fund), excess 21,727 (114.5%), new today
+  AMBER  Harbourfront Asset Management: PFE 704,003 is 88.0% of limit 800,000 (BBB asset manager)
+
+SETTLEMENT FAILS (aged in business days, Basel failed-trade factors)
+--------------------------------------------------------------------------------------------------------
+Trade    Counterparty               Security  Side         Due  Age  Bucket  Factor    Curr exp   Capital
+T00980   Lakeview Mutual Insurance  NVDA      buy   2026-08-28   20   16-30     50%       7,134     3,567
+T00979   Harbourfront Asset Managem SHOP      buy   2026-09-17    7    5-15      8%      60,004     4,800
+T00860   Goldman Sachs              RY-5Y     sell  2026-09-23    3     0-4      0%      29,671         0
+T00874   BlackRock                  NVDA      sell  2026-09-23    3     0-4      0%           0         0
+T00981   Granite Peak Advisors      UST-10Y   sell  2026-09-24    2     0-4      0%      28,458         0
+T00904   Lakeview Mutual Insurance  AAPL      sell  2026-09-25    1     0-4      0%           0         0
+  Capital held against fails: 8,367 (positive current exposure x factor; 0% under 5 days)
+
+WRONG-WAY RISK (selling a counterparty securities its own group issued)
+--------------------------------------------------------------------------------------------------------
+  T00969 sell 1,400,000 RY-5Y to Royal Bank of Canada: a default would hit the price too. Exposure taken at jump-to-default 829,136 (vs. 5,061 from price volatility)
+  T00982 sell 2,000 RY to Royal Bank of Canada: a default would hit the price too. Exposure taken at jump-to-default 571,180 (vs. 9,476 from price volatility)
+
+COUNTERPARTY WATCHLIST (news in the last 30 days: legal, leadership, deal)
+--------------------------------------------------------------------------------------------------------
+  2026-09-24  Northshore Capital LP (legal, sample (fictional))
+      A securities regulator opened a review of the fund's trade reporting.
+  2026-09-16  Harbourfront Asset Management (leadership, sample (fictional))
+      The chief investment officer resigned; an interim CIO was named.
+
+LARGEST TRADE EXPOSURES (top 15 by PFE, CAD)
+--------------------------------------------------------------------------------------------------------
+Trade    Counterparty            Security  Side     Quantity  Trade px     Price        MtM    Add-on        PFE Hzn
+T00969   Royal Bank of Canada    RY-5Y     sell    1,400,000     99.22     99.24       -204     5,265    829,136  1d
+T00982   Royal Bank of Canada    RY        sell        2,000    285.59    285.07      1,040     8,436    571,180  1d
+T00964   Harbourfront Asset Mana GOC-10Y   buy    43,800,000     98.31     98.32      6,381   273,154    279,535  1d
+T00980   Lakeview Mutual Insuran NVDA      buy         9,500    228.33    228.86      7,134   267,808    274,942  5dF
+T00979   Harbourfront Asset Mana SHOP      buy         2,800    182.77    204.20     60,004    74,557    134,561  5dF
+T00957   Harbourfront Asset Mana XOM       sell       19,100    163.33    162.52     21,919   112,171    134,090  1d
+T00981   Granite Peak Advisors   UST-10Y   sell    5,000,000     98.14     97.73     28,458    96,574    125,032  5dF
+T00956   Harbourfront Asset Mana XOM       buy        25,100    164.22    162.52    -60,455   147,408     86,953  1d
+T00860   Goldman Sachs           RY-5Y     sell    5,000,000     99.83     99.24     29,671    41,845     71,516  5dF
+T00947   Harbourfront Asset Mana ATD       sell       38,200     78.41     78.62     -8,022    76,886     68,864  1d
+T00975   Northshore Capital LP   SHOP      buy         4,900    203.68    204.20      2,548    55,640     58,188  1d
+T00963   Cedar Point Partners    GS        buy         1,500    916.95    916.28     -1,424    59,340     57,917  1d
+T00973   Toronto-Dominion Bank   UST-5Y    sell   10,000,000     97.90     97.90      1,118    53,274     54,393  1d
+T00940   Manulife Financial      GOC-10Y   sell    5,000,000     98.50     98.32      8,872    43,703     52,575  2d
+T00976   Northshore Capital LP   CNQ       buy        32,400     67.61     67.38     -7,452    59,135     51,683  1d
+  MtM > 0: the trade has moved against us. Hzn: business days to settlement (F: failed).
+
+MARKET DATA AND WARNINGS
+--------------------------------------------------------------------------------------------------------
+  USDCAD 1.4168 (Bank of Canada, 2026-09-28)
+  Volatility models: GARCH(1,1) x24
+========================================================================================================
+PFE = max(0, replacement cost + add-on), one-sided 95%, summed per counterparty with no netting.
+Synthetic trade book; internal ratings and limits are illustrative.

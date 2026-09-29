@@ -1,0 +1,42 @@
+[project]
+name = "dvp-risk-monitor"
+version = "0.1.0"
+description = "Daily counterparty credit exposure monitor for pending DVP trades"
+authors = [
+    { name = "TheodoreVC", email = "theodore.vancap@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "arch>=8.0.0",
+    "exchange-calendars>=4.13.2",
+    "httpx>=0.28.1",
+    "numpy>=2.5.3",
+    "pandas>=3.0.6",
+    "pyarrow>=25.0.1",
+    "yfinance>=1.7.0",
+]
+
+[project.optional-dependencies]
+attention-alerts = [
+    "psycopg[binary]>=3.3.6",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.16.9",
+]
